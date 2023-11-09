@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Journal</title>
+    <link rel="stylesheet" href="journal.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Journal</h1>
+        <div class="nav-buttons">
+            <button onclick="newEntry()">Write New Entry</button>
+            <button onclick="viewEntries()">View Previous Entries</button>
+        </div>
+        <div id="new-entry" class="hidden">
+            <label for="date">Date:</label>
+            <input type="date" id="date">
+            <label for="entry">Entry:</label>
+            <textarea id="entry"></textarea>
+            <button onclick="saveEntry()">Save Entry</button>
+        </div>
+        <div id="entries" class="hidden"></div>
+    </div>
+    <script src="journal.js"></script>
+</body>
+</html>
